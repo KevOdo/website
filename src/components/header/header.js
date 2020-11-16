@@ -1,13 +1,7 @@
 import React, { Component } from "react"
-import styled, { keyframes } from "styled-components"
-import { fadeIn } from "react-animations"
-import { nav } from "react-bulma-components"
 import { Link } from "react-router-dom"
+import Reveal from "react-reveal/Reveal"
 import "./header.scss"
-
-const Anim = styled.div`
-  animation: 3s ${keyframes`${fadeIn}`};
-`
 
 class Header extends Component {
   render() {
@@ -16,9 +10,11 @@ class Header extends Component {
         <section class="hero hero-image is-medium">
           <div class="hero-body">
             <div class="container">
-              <Anim>
-                <h1 class="title text ">Kevin O'Donnell</h1>
-              </Anim>
+              <Reveal duration="2000">
+                <div>
+                  <h1 class="title text ">Kevin O'Donnell</h1>
+                </div>
+              </Reveal>
             </div>
           </div>
           <div class="hero-foot">
