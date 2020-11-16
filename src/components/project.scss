@@ -1,0 +1,15 @@
+.img-wrap {
+  border-radius: 50%;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.media-left:hover .img-wrap {
+  background-color: black;
+}
+
+.media-left:hover img {
+  opacity: 0.2;
+}

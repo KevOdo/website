@@ -1,21 +1,29 @@
 import React, { Component } from "react"
-import "./header.scss"
+import styled, { keyframes } from "styled-components"
+import { fadeIn } from "react-animations"
 import { nav } from "react-bulma-components"
 import { Link } from "react-router-dom"
+import "./header.scss"
+
+const Anim = styled.div`
+  animation: 3s ${keyframes`${fadeIn}`};
+`
 
 class Header extends Component {
   render() {
     return (
       <header>
-        <section class="hero hero-image ">
+        <section class="hero hero-image is-medium">
           <div class="hero-body">
             <div class="container">
-              <h1 class="title text">Kevin O'Donnell</h1>
+              <Anim>
+                <h1 class="title text ">Kevin O'Donnell</h1>
+              </Anim>
             </div>
           </div>
           <div class="hero-foot">
             <nav
-              class="navbar is-link"
+              class="navbar is-dark"
               role="navigation"
               aria-label="main navigation"
             >
@@ -32,8 +40,8 @@ class Header extends Component {
                   <span aria-hidden="true"></span>
                 </p>
               </div>
-              <div class="navbar-menu" id="nav-menu">
-                <Link to="/" class="navbar-item text">
+              <div class="navbar-menu is-spaced" id="nav-menu">
+                <Link to="/" class="navbar-item text is-family-secondary">
                   Home
                 </Link>
                 <Link to="/Projects" class="navbar-item text">
