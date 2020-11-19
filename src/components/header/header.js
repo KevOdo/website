@@ -1,32 +1,32 @@
 import React, { Component } from "react"
 import { Link } from "react-router-dom"
-import Reveal from "react-reveal/Reveal"
+import Fade from "react-reveal/Fade"
 import "./header.scss"
 
 class Header extends Component {
   render() {
     return (
       <header>
-        <section class="hero hero-image is-medium">
-          <div class="hero-body">
-            <div class="container">
-              <Reveal duration="2000">
+        <section className="hero hero-image is-medium">
+          <div className="hero-body">
+            <div className="container">
+              <Fade duration={3000}>
                 <div>
-                  <h1 class="title text ">Kevin O'Donnell</h1>
+                  <h1 className="title text ">Kevin O'Donnell</h1>
                 </div>
-              </Reveal>
+              </Fade>
             </div>
           </div>
-          <div class="hero-foot">
+          <div className="hero-foot">
             <nav
-              class="navbar is-dark"
+              className="navbar is-dark"
               role="navigation"
               aria-label="main navigation"
             >
-              <div class="navbar-brand">
+              <div className="navbar-brand">
                 <p
                   role="button"
-                  class="navbar-burger burger"
+                  className="navbar-burger burger"
                   aria-label="menu"
                   aria-expanded="false"
                   data-target="navbarBasicExample"
@@ -36,14 +36,14 @@ class Header extends Component {
                   <span aria-hidden="true"></span>
                 </p>
               </div>
-              <div class="navbar-menu is-spaced" id="nav-menu">
-                <Link to="/" class="navbar-item text is-family-secondary">
+              <div className="navbar-menu is-spaced" id="nav-menu">
+                <Link to="/" className="navbar-item text is-family-secondary">
                   Home
                 </Link>
-                <Link to="/Projects" class="navbar-item text">
+                <Link to="/Projects" className="navbar-item text">
                   Projects
                 </Link>
-                <Link to="/Contact" class="navbar-item text">
+                <Link to="/Contact" className="navbar-item text">
                   Contact
                 </Link>
               </div>
