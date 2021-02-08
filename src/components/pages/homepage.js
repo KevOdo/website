@@ -7,34 +7,31 @@ import "./homepage.scss"
 
 class Homepage extends Component {
   render() {
-    const desc = "I'm one half of the ModSquad"
-
-    const intro = (
-      <div className="about has-text-centered">
-        <Fade delay={2000}>
-          <h1 className="title text">Who am I?</h1>
-        </Fade>
-        <Fade delay={3000} duration={1000}>
-          <h2 className="subtitle text">{desc}</h2>
-        </Fade>
-      </div>
-    )
+    const desc = "I'm a little skanky boye"
 
     const cardImage = (
       <Fade delay={1000}>
-        <figure className="image">
-          <img src={profile} alt=""></img>
+        <figure className="a">
+          <img className="profile" src={profile} alt=""></img>
         </figure>
       </Fade>
     )
 
     return (
       <div>
-        <div className="columns main has-text-centered">
-          <div className=" column is-three-fifths is-offset-one-fifth">
-            <div className="card columns">
-              <div className="card-image column is-two-fifths"> {cardImage}</div>
-              <div className="card-content column is-three-fifths">{intro}</div>
+        <div className="columns main">
+          <div className="column is-three-fifths is-offset-one-fifth">
+            <div className="card">
+              <div className="columns">
+                <div className="card-image column is-two-fifths"> {cardImage}</div>
+                <div className="card-content column is-three-fifths">
+                  <div className="header">
+                    <p className="title is-4 text">Who am I?</p>
+                  </div>
+                  <div className="content is-3 text">{desc}</div>
+                </div>
+              </div>
+              <div className="card-footer">HAHA</div>
             </div>
           </div>
         </div>

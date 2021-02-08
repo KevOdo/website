@@ -6,7 +6,7 @@ class Project extends Component {
   render(props) {
     return (
       <div>
-        <div className="box is-half media">
+        <div className="project box is-half media">
           <div className="media-left">
             <div className="img-wrap">
               <a href={this.props.link}>
