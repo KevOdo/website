@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom"
 import "./App.scss"
 import "react-bulma-components/dist/react-bulma-components.min.css"
 import Particles from "react-particles-js"
-import { ParallaxProvider, Parallax } from "react-scroll-parallax"
 
 import Header from "./components/header/header.js"
 import Homepage from "./components/pages/homepage.js"
@@ -21,7 +20,7 @@ class App extends Component {
           params={{
             particles: {
               number: {
-                value: 100,
+                value: 50,
                 density: {
                   enable: true,
                   value_area: 1000,
@@ -31,11 +30,12 @@ class App extends Component {
           }}
         />
         <div className="App">
-          <Header className="h" />
-          <Route exact path="/" component={Homepage} />
-          <Route exact path="/Projects" component={ProjectPage} />
-          <Route exact path="/Contact" component={Contact} />
-          <Footer />
+          <body>
+            <Header />
+            <Route exact path="/" component={Homepage} />
+            <Route exact path="/Projects" component={ProjectPage} />
+            <Route exact path="/Contact" component={Contact} />
+          </body>
         </div>
       </Router>
     )

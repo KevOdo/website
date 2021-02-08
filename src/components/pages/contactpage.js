@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import "./contactpage.scss"
 
 class Projects extends Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class Projects extends Component {
   }
   render() {
     return (
-      <div className="Project">
+      <div className="contact">
         <form
           id="contact-form"
           onSubmit={this.handleSubmit.bind(this)}

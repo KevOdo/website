@@ -18,7 +18,7 @@ class Homepage extends Component {
     )
 
     return (
-      <div>
+      <div className="home">
         <div className="columns main">
           <div className="column is-three-fifths is-offset-one-fifth">
             <div className="card">
