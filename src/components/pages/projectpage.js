@@ -71,6 +71,19 @@ class ProjectPage extends Component {
         ],
         link: "https://yumc.uk",
       },
+      {
+        title: "YUMC Website",
+        description:
+          "I helped build this website for the York University Mountaineering Club during my third year of University.",
+        img_src: { yumc },
+        list: [
+          "•	Worked on the API and pages of the website",
+          "•	Created a system for users to request gear pending admin approval",
+          "•	Handled the CMS transition from Directus to Strapi",
+          "•	Deployed the CMS using AWS services",
+        ],
+        link: "https://yumc.uk",
+      },
     ]
 
     return (
