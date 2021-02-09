@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import { BrowserRouter as Router, Route } from "react-router-dom"
+import { useEffect } from "react"
+import { useLocation } from "react-router-dom"
 
 import "./App.scss"
 import "react-bulma-components/dist/react-bulma-components.min.css"
@@ -11,10 +13,21 @@ import ProjectPage from "./components/pages/projectpage.js"
 import Contact from "./components/pages/contactpage.js"
 import Footer from "./components/footer/footer.js"
 
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
+  return null
+}
+
 class App extends Component {
   render() {
     return (
       <Router>
+        <ScrollToTop />
         <Particles
           className="help"
           params={{
