@@ -24,7 +24,6 @@ import {
   faServer,
 } from "@fortawesome/free-solid-svg-icons"
 import profile from "../../assets/me2.jpg"
-import strapi from "../../assets/strapi-logo.png"
 
 import "./homepage.scss"
 

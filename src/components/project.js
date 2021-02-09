@@ -7,7 +7,7 @@ class Project extends Component {
     return (
       <div className="project is-multiline centered box is-half columns">
         <div className="column is-two-fifths">
-          <div className="img-wrap">
+          <div className="img-wrap media-left">
             <a href={this.props.link}>
               <img className="img" src={this.props.img_src} alt="Project" />
             </a>
