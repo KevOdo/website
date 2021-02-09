@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
 .App {
   background-image: url("./assets/trianglify-lowres-1.png");
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
+  width: 100%;
 }
 
 .help{
@@ -12,8 +15,21 @@
   background-position: 50% 50%;
 }
 
-header {
-  //padding: 2%;
-  //position: fixed;
-  //position: sticky;
+header{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: rgba(26,26,26,0.4);
+}
+
+.rest{
+  padding-top: 20vh;
+}
+
+html, body{
+  overflow: hidden;
+}
+
+.title{
+  font-family: 'Rubik', sans-serif;
 }

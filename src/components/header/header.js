@@ -12,11 +12,6 @@ class Header extends Component {
             <Fade duration={3000}>
               <nav className="navbar" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
-                  <div className="navbar-item">
-                    <div>
-                      <h1 className="title text ">Kevin O'Donnell</h1>
-                    </div>
-                  </div>
                   <p
                     role="button"
                     className="navbar-burger burger"

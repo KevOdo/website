@@ -10,6 +10,7 @@ class Project extends Component {
           <div className="media-left">
             <div className="img-wrap">
               <a href={this.props.link}>
+                {console.log(this.props.img_src)}
                 <img className="img" src={this.props.img_src} alt="Project" />
               </a>
             </div>

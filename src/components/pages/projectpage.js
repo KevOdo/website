@@ -3,6 +3,7 @@ import Project from "../project.js"
 import Zoom from "react-reveal/Zoom"
 import Fade from "react-reveal/Fade"
 import yumc from "../../assets/yumc-medium.png"
+import tiilo from "../../assets/tiilo.png"
 
 import "./projectpage.scss"
 
@@ -24,11 +25,11 @@ class ProjectPage extends Component {
     function ProjectItem(x) {
       return (
         <div className="project">
-          <Zoom>
+          <Zoom duration={1500}>
             <Project
               title={x.title}
               description={x.description}
-              img_src={yumc}
+              img_src={x.img_src}
               list={List(x.list)}
               link={x.link}
             />
@@ -62,7 +63,7 @@ class ProjectPage extends Component {
         title: "YUMC Website",
         description:
           "I helped build this website for the York University Mountaineering Club during my third year of University.",
-        img_src: { yumc },
+        img_src: yumc,
         list: [
           "•	Worked on the API and pages of the website",
           "•	Created a system for users to request gear pending admin approval",
@@ -72,17 +73,15 @@ class ProjectPage extends Component {
         link: "https://yumc.uk",
       },
       {
-        title: "YUMC Website",
+        title: "Tiilo Website",
         description:
-          "I helped build this website for the York University Mountaineering Club during my third year of University.",
-        img_src: { yumc },
+          "I helped my best friend and acclaimed R6S player build his personal portfolio website",
+        img_src: tiilo,
         list: [
-          "•	Worked on the API and pages of the website",
-          "•	Created a system for users to request gear pending admin approval",
-          "•	Handled the CMS transition from Directus to Strapi",
-          "•	Deployed the CMS using AWS services",
+          "•	Helped set up particles js background",
+          "•	General technical help with css and js elements",
         ],
-        link: "https://yumc.uk",
+        link: "https://tiilo.github.io",
       },
     ]
 

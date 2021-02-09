@@ -1,20 +1,15 @@
 .about {
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-top: 5%;
+  padding-bottom: 10%;
 }
 
 .profile {
   border-radius: 5%;
   display: block;
-}
-
-.card{
-  margin-top: 4%;
-  margin-bottom: 4%;
-  background: #262626;
-  border-radius: 25px;
-  padding-top: 1%;
-  padding-left: 1%;
+  height: 80%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .centered{
@@ -24,5 +19,29 @@
 }
 
 .home{
-  height: 100vh;
+  height: 100%;
+  width: 100vw;
+}
+
+.name{
+  padding: 3%;
+  font-family: 'Rubik', sans-serif;
+  font-size: 500%;
+}
+
+.skillbox{
+  border-radius: 15px;
+  display: block;
+  background-color: rgba(26,26,26,0.4);
+  max-width: 900px;
+  margin-top: 10%;
+}
+
+.skilltitle{
+  background-color: rgba(26,26,26,0.8);
+  border-radius: 15px;
+}
+
+.card-content{
+  padding-left: 5%;
 }
