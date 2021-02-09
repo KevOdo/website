@@ -24,17 +24,15 @@ class ProjectPage extends Component {
 
     function ProjectItem(x) {
       return (
-        <div className="project">
-          <Zoom duration={1500}>
-            <Project
-              title={x.title}
-              description={x.description}
-              img_src={x.img_src}
-              list={List(x.list)}
-              link={x.link}
-            />
-          </Zoom>
-        </div>
+        <Zoom duration={1500}>
+          <Project
+            title={x.title}
+            description={x.description}
+            img_src={x.img_src}
+            list={List(x.list)}
+            link={x.link}
+          />
+        </Zoom>
       )
     }
 
